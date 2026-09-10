@@ -214,6 +214,7 @@ p:last-child { margin-bottom: 0; }
   padding: 8px;
 }
 .nav-toggle svg { width: 24px; height: 24px; }
+.lang-switch-mobile { display: none; }
 
 /* ---------- Hero ---------- */
 .hero {
