@@ -80,9 +80,58 @@
     });
   }
 
+  /* ---------- Scrollspy dla menu bocznego (regulamin, o serwerze) ---------- */
+  function initSideNavScrollspy() {
+    var sideNav = document.querySelector(".side-nav");
+    if (!sideNav) return;
+
+    var links = Array.prototype.slice.call(sideNav.querySelectorAll('a[href^="#"]'));
+    if (!links.length) return;
+
+    var sections = [];
+    links.forEach(function (link) {
+      var id = link.getAttribute("href").slice(1);
+      var el = document.getElementById(id);
+      if (el) sections.push({ id: id, el: el });
+    });
+    if (!sections.length) return;
+
+    function setActive(id) {
+      links.forEach(function (link) {
+        link.classList.toggle("active", link.getAttribute("href") === "#" + id);
+      });
+    }
+
+    if (!("IntersectionObserver" in window)) {
+      setActive(sections[0].id);
+      return;
+    }
+
+    var current = sections[0].id;
+
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            current = entry.target.id;
+          }
+        });
+        setActive(current);
+      },
+      { rootMargin: "-110px 0px -65% 0px", threshold: 0 }
+    );
+
+    sections.forEach(function (s) {
+      observer.observe(s.el);
+    });
+
+    setActive(current);
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initLang();
     initNavToggle();
     initIpCopy();
+    initSideNavScrollspy();
   });
 })();

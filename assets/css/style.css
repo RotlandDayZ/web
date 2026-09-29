@@ -527,7 +527,7 @@ section { padding: 96px 0; }
 .cta-banner .hero-ctas { justify-content: center; margin-bottom: 0; }
 
 /* ---------- Content blocks (rules / about / join pages) ---------- */
-.content-block { max-width: 780px; }
+.content-block { max-width: 780px; scroll-margin-top: 100px; }
 .content-block + .content-block { margin-top: 64px; }
 .content-block h2 {
   font-size: 30px;
