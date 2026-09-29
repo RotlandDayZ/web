@@ -62,10 +62,7 @@
   <section>
     <div class="wrap">
 
-      <div class="notice-edit" data-lang="pl">DO UZUPEŁNIENIA: poniższe odpowiedzi to miejsca na Twoje prawdziwe wartości (czasy despawnu, zasady dotacji itd.) — podmień treść w znacznikach &lt;p&gt; wewnątrz każdej odpowiedzi.</div>
-      <div class="notice-edit" data-lang="en" hidden>TO FILL IN: the answers below are placeholders for your real values (despawn times, donation policy etc.) — replace the text inside each answer's &lt;p&gt; tags.</div>
-
-      <div class="faq-list" style="margin-top:28px;">
+      <div class="faq-list" style="margin-top:8px;">
 
         <details class="faq-item" data-lang="pl">
           <summary>
@@ -73,8 +70,7 @@
             <span class="faq-icon"></span>
           </summary>
           <div class="faq-answer">
-            <p>DO UZUPEŁNIENIA: wpisz tutaj rzeczywisty czas despawnu przedmiotów rzuconych na ziemię.</p>
-            <p>DO UZUPEŁNIENIA: wpisz tutaj, czy i o ile dłużej przedmioty leżą pod flagą / na terenie bazy.</p>
+            <p>Przedmiot rzucony na ziemię, niezależnie czy pod flagą, czy w innym miejscu, zniknie po 4 godzinach. Wyjątkiem jest Rustfall (safezone), gdzie przedmiot pozostawiony na ziemi w granicach safezonu zniknie po 30 minutach.</p>
           </div>
         </details>
         <details class="faq-item" data-lang="en" hidden>
@@ -83,8 +79,7 @@
             <span class="faq-icon"></span>
           </summary>
           <div class="faq-answer">
-            <p>TO FILL IN: enter the actual despawn time for items dropped on the ground.</p>
-            <p>TO FILL IN: enter whether (and how much longer) items last under a flag / inside base territory.</p>
+            <p>An item dropped on the ground — whether under a flag or anywhere else — disappears after 4 hours. The exception is Rustfall (the safe zone), where an item left on the ground within the safe zone boundaries disappears after 30 minutes.</p>
           </div>
         </details>
 
@@ -94,7 +89,13 @@
             <span class="faq-icon"></span>
           </summary>
           <div class="faq-answer">
-            <p>DO UZUPEŁNIENIA: wpisz tutaj rzeczywisty czas, po którym znika ciało gracza (a wraz z nim ekwipunek).</p>
+            <p>Ciało zabitego gracza czeka na niego około 30 minut. Jednak należy pamiętać, że:</p>
+            <ul>
+              <li>restart serwera usunie Twoje ciało,</li>
+              <li>w chwili gdy nikogo nie ma w okolicy ciała, serwer również może usunąć je wcześniej,</li>
+              <li>inny gracz może je znaleźć, ograbić, pokroić bądź zakopać.</li>
+            </ul>
+            <p>Jeśli wystąpi jedna z powyższych sytuacji, administracja NIE pomoże i nie odda utraconych przedmiotów wraz z ciałem.</p>
           </div>
         </details>
         <details class="faq-item" data-lang="en" hidden>
@@ -103,26 +104,217 @@
             <span class="faq-icon"></span>
           </summary>
           <div class="faq-answer">
-            <p>TO FILL IN: enter the actual time after which a player's body (and its gear) despawns.</p>
+            <p>A killed player's body waits for about 30 minutes. However, keep in mind that:</p>
+            <ul>
+              <li>a server restart will remove your body,</li>
+              <li>if no one is near the body, the server may also remove it earlier,</li>
+              <li>another player may find it, loot it, cut it up, or bury it.</li>
+            </ul>
+            <p>If any of the above happens, the administration will NOT help or restore lost items along with the body.</p>
           </div>
         </details>
 
         <details class="faq-item" data-lang="pl">
           <summary>
-            Czy poprzez dotację na serwer mogę otrzymać jakiś przedmiot?
+            Czy poprzez dotację serwera otrzymam jakieś przedmioty albo przywileje?
             <span class="faq-icon"></span>
           </summary>
           <div class="faq-answer">
-            <p>DO UZUPEŁNIENIA: opisz tutaj dokładnie, co gracz otrzymuje za wsparcie serwera i na jakich zasadach (pamiętaj, żeby było to zgodne z zasadami monetyzacji Bohemia Interactive — bez przewag łamiących balans PvP).</p>
+            <p>Nie! Wsparcie serwera jest dobrowolne i nie niesie ze sobą żadnych korzyści w postaci przedmiotów respawnowanych przez administrację czy też informacji, gdzie coś znaleźć. Jedyną rzeczą, jaką otrzymują wspierający serwer, jest kolor na czacie w grze oraz ranga na Discordzie.</p>
           </div>
         </details>
         <details class="faq-item" data-lang="en" hidden>
           <summary>
-            Can I get an item by donating to the server?
+            Can I get items or privileges by donating to the server?
             <span class="faq-icon"></span>
           </summary>
           <div class="faq-answer">
-            <p>TO FILL IN: describe exactly what a player receives for supporting the server and under what terms (keep it compliant with Bohemia Interactive's monetization rules — no PvP-balance-breaking advantages).</p>
+            <p>No! Supporting the server is voluntary and does not come with any benefits such as items spawned in by the administration or information about where to find things. The only thing supporters receive is a colored name in the in-game chat and a rank on Discord.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" data-lang="pl">
+          <summary>
+            Gdzie mogę zobaczyć tier mapę?
+            <span class="faq-icon"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>W celu zapoznania się z tier mapą wejdź na stronę <a href="https://www.izurvive.com/#c=-27;79;1" target="_blank" rel="noopener noreferrer">izurvive.com</a>, a następnie w Filter zaznacz „Loot Tiers Overlay”.</p>
+            <p>Możesz również zerknąć na nasz <a href="https://discord.com/channels/1318216504273272862/1398297213033254944" target="_blank" rel="noopener noreferrer">Discord, na kanał „Features”</a>, gdzie znajdziesz tier mapę.</p>
+          </div>
+        </details>
+        <details class="faq-item" data-lang="en" hidden>
+          <summary>
+            Where can I see the tier map?
+            <span class="faq-icon"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>To check the tier map, go to <a href="https://www.izurvive.com/#c=-27;79;1" target="_blank" rel="noopener noreferrer">izurvive.com</a> and enable "Loot Tiers Overlay" in Filter.</p>
+            <p>You can also check our <a href="https://discord.com/channels/1318216504273272862/1398297213033254944" target="_blank" rel="noopener noreferrer">Discord, in the "Features" channel</a>, where you'll find the tier map.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" data-lang="pl">
+          <summary>
+            Widzę, że na serwerze są modowane przedmioty, pojazdy i bronie — gdzie je znajdę?
+            <span class="faq-icon"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Serwer oferuje 3 miejsca z NPC, gdzie można zakupić przedmioty oraz pojazdy:</p>
+            <ul>
+              <li>Black Market, na którym sprzedasz wszystkie modowane przedmioty.</li>
+              <li>Drug, gdzie sprzedasz alkohol i inne nielegalne substancje.</li>
+              <li>Rustfall, safezone, gdzie można sprzedać wszystkie przedmioty vanilla oraz modowane.</li>
+            </ul>
+            <p>JEDNAK należy pamiętać, że przedmioty modowane na safezonie sprzedasz tylko za 25% wartości tego, za ile zostałyby sprzedane na Black Markecie. Na Rustfall nie da się sprzedać asortymentu z Drug tradera.</p>
+          </div>
+        </details>
+        <details class="faq-item" data-lang="en" hidden>
+          <summary>
+            I see there are modded items, vehicles and weapons on the server — where do I find them?
+            <span class="faq-icon"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>The server offers 3 NPC locations where you can buy items and vehicles:</p>
+            <ul>
+              <li>Black Market, where you can sell all modded items.</li>
+              <li>Drug trader, where you can sell alcohol and other illegal substances.</li>
+              <li>Rustfall, the safe zone, where you can sell both vanilla and modded items.</li>
+            </ul>
+            <p>HOWEVER, keep in mind that modded items sold at the safe zone only fetch 25% of the value they'd get at the Black Market. Drug trader goods cannot be sold at Rustfall.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" data-lang="pl">
+          <summary>
+            Czy da się włączyć kompas?
+            <span class="faq-icon"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Tak, aby włączyć kompas, należy nacisnąć klawisz „H”. Jednak aby działał, w ekwipunku trzeba posiadać kompas bądź kompas kartograficzny.</p>
+          </div>
+        </details>
+        <details class="faq-item" data-lang="en" hidden>
+          <summary>
+            Can I enable a compass?
+            <span class="faq-icon"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Yes, press "H" to enable the compass. However, for it to work, you need to have a compass or a cartographic compass in your inventory.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" data-lang="pl">
+          <summary>
+            Jestem na komisariacie policji i są drzwi, których nie da się otworzyć, o co chodzi?
+            <span class="faq-icon"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Posterunki policji Tieru 2 i wyżej posiadają jeden pokój zamknięty na klucz. Aby móc go otworzyć, trzeba zdobyć klucz, który można znaleźć u zedów o nazwie Chad — przeważnie można ich znaleźć właśnie pod komisariatami.</p>
+          </div>
+        </details>
+        <details class="faq-item" data-lang="en" hidden>
+          <summary>
+            I'm at a police station and there's a door I can't open, what's going on?
+            <span class="faq-icon"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Tier 2 and higher police stations have one room locked with a key. To open it, you need to obtain the key, which can be found on zeds called "Chad" — they usually spawn right around police stations.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" data-lang="pl">
+          <summary>
+            O co chodzi ze skrzyniami na militarkach?
+            <span class="faq-icon"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Na bazach militarnych można znaleźć zamknięte skrzynie na klucz. Aby je otworzyć, należy zdobyć klucz, który można znaleźć u wojskowych zarażonych.</p>
+          </div>
+        </details>
+        <details class="faq-item" data-lang="en" hidden>
+          <summary>
+            What's the deal with the crates at military bases?
+            <span class="faq-icon"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>At military bases you can find crates locked with a key. To open them, you need to obtain the key, which can be found on military infected.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" data-lang="pl">
+          <summary>
+            Czy gdzieś można przetestować pojazd przed jego zakupem?
+            <span class="faq-icon"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Nie, a administracja również nie zwraca pieniędzy za zakupiony pojazd. Jeśli nie jesteś pewien, zapytaj na czacie bądź Discordzie.</p>
+          </div>
+        </details>
+        <details class="faq-item" data-lang="en" hidden>
+          <summary>
+            Can I test-drive a vehicle before buying it?
+            <span class="faq-icon"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>No, and the administration does not refund money for a purchased vehicle either. If you're not sure, ask in chat or on Discord.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" data-lang="pl">
+          <summary>
+            Czy na serwerze są organizowane eventy?
+            <span class="faq-icon"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Tak!</p>
+          </div>
+        </details>
+        <details class="faq-item" data-lang="en" hidden>
+          <summary>
+            Are events organized on the server?
+            <span class="faq-icon"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Yes!</p>
+          </div>
+        </details>
+
+        <details class="faq-item" data-lang="pl">
+          <summary>
+            Gdzie mogę zgłosić skargę na członka administracji?
+            <span class="faq-icon"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Skargę na członka administracji możesz złożyć do właściciela serwera: Liilgames.</p>
+          </div>
+        </details>
+        <details class="faq-item" data-lang="en" hidden>
+          <summary>
+            Where can I report a complaint about a staff member?
+            <span class="faq-icon"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>You can report a complaint about an administration member to the server owner: Liilgames.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" data-lang="pl">
+          <summary>
+            Znalazłem błąd / podejrzewam gracza o oszukiwanie, co zrobić?
+            <span class="faq-icon"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Otwórz jak najszybciej <a href="https://discord.com/channels/1318216504273272862/1396877460024328214" target="_blank" rel="noopener noreferrer">ticket</a> na naszym Discordzie, a administracja szybko zareaguje.</p>
+          </div>
+        </details>
+        <details class="faq-item" data-lang="en" hidden>
+          <summary>
+            I found a bug / I suspect a player of cheating, what should I do?
+            <span class="faq-icon"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Open a <a href="https://discord.com/channels/1318216504273272862/1396877460024328214" target="_blank" rel="noopener noreferrer">ticket</a> on our Discord as soon as possible and the administration will respond quickly.</p>
           </div>
         </details>
 
