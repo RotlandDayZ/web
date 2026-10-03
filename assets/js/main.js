@@ -128,10 +128,39 @@
     setActive(current);
   }
 
+  /* ---------- Rozwijane sekcje regulaminu: otwieranie po kliknięciu kotwicy ---------- */
+  function initRulesDeepLinks() {
+    var sections = document.querySelectorAll("details.rules-section");
+    if (!sections.length) return;
+
+    function openFromHash() {
+      var id = window.location.hash.slice(1);
+      if (!id) return;
+      var target = document.getElementById(id);
+      if (target && target.tagName === "DETAILS") {
+        target.open = true;
+      }
+    }
+
+    openFromHash();
+    window.addEventListener("hashchange", openFromHash);
+
+    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+      link.addEventListener("click", function () {
+        var id = link.getAttribute("href").slice(1);
+        var target = document.getElementById(id);
+        if (target && target.tagName === "DETAILS") {
+          target.open = true;
+        }
+      });
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initLang();
     initNavToggle();
     initIpCopy();
     initSideNavScrollspy();
+    initRulesDeepLinks();
   });
 })();
