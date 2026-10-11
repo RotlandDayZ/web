@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="pl" data-title-pl="Pojazdy | Rotland" data-title-en="Vehicles | Rotland">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pojazdy | Rotland</title>
+<meta name="description" content="Lista pojazdów dostępnych na serwerze Rotland.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">ROT<span>LAND</span></a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html" data-lang="pl">Start</a>
+      <a href="index.html" data-lang="en" hidden>Home</a>
+      <a href="o-serwerze.html" data-lang="pl">O serwerze</a>
+      <a href="o-serwerze.html" data-lang="en" hidden>About</a>
+      <a href="jak-dolaczyc.html" data-lang="pl">Jak dołączyć</a>
+      <a href="jak-dolaczyc.html" data-lang="en" hidden>How to join</a>
+      <a href="regulamin.html" data-lang="pl">Regulamin</a>
+      <a href="regulamin.html" data-lang="en" hidden>Rules</a>
+      <a href="pojazdy.html" class="active" data-lang="pl">Pojazdy</a>
+      <a href="pojazdy.html" class="active" data-lang="en" hidden>Vehicles</a>
+      <a href="faq.html" data-lang="pl">FAQ</a>
+      <a href="faq.html" data-lang="en" hidden>FAQ</a>
+
+      <div class="lang-switch lang-switch-mobile">
+        <button type="button" data-set-lang="pl">PL</button>
+        <button type="button" data-set-lang="en">EN</button>
+      </div>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch">
+        <button type="button" data-set-lang="pl">PL</button>
+        <button type="button" data-set-lang="en">EN</button>
+      </div>
+      <a href="https://discord.gg/9V34hJrTmx" target="_blank" rel="noopener noreferrer" class="btn btn-ember btn-sm" data-lang="pl">Discord</a>
+      <a href="https://discord.gg/9V34hJrTmx" target="_blank" rel="noopener noreferrer" class="btn btn-ember btn-sm" data-lang="en" hidden>Discord</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow" data-lang="pl">GARAŻ ROTLAND</span>
+      <span class="eyebrow" data-lang="en" hidden>ROTLAND GARAGE</span>
+      <h1 data-lang="pl">Pojazdy</h1>
+      <h1 data-lang="en" hidden>Vehicles</h1>
+      <p class="lede" data-lang="pl">Wszystkie pojazdy dostępne na serwerze. Kliknij w nazwę, żeby zobaczyć zdjęcie i opis.</p>
+      <p class="lede" data-lang="en" hidden>Every vehicle available on the server. Click a name to see its photo and description.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="vehicle-tools">
+        <input type="search" id="vehicle-search" class="vehicle-search" autocomplete="off" data-ph-pl="Szukaj pojazdu…" data-ph-en="Search vehicles…" placeholder="Szukaj pojazdu…" aria-label="Search">
+        <span class="vehicle-count" id="vehicle-count" data-total="74"></span>
+      </div>
+      <p class="vehicle-empty" id="vehicle-empty" hidden></p>
+      <div class="faq-list" id="vehicle-list">
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="azlk">
+          <summary>Azlk<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/azlk.webp" alt="Azlk" width="895" height="655" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="azlk">
+          <summary>Azlk<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/azlk.webp" alt="Azlk" width="895" height="655" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="bmw">
+          <summary>BMW<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/bmw.webp" alt="BMW" width="960" height="685" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="bmw">
+          <summary>BMW<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/bmw.webp" alt="BMW" width="960" height="685" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="brdm">
+          <summary>BRDM<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/brdm.webp" alt="BRDM" width="960" height="656" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="brdm">
+          <summary>BRDM<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/brdm.webp" alt="BRDM" width="960" height="656" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="btr">
+          <summary>BTR<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/btr.webp" alt="BTR" width="927" height="631" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="btr">
+          <summary>BTR<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/btr.webp" alt="BTR" width="927" height="631" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="buggy">
+          <summary>Buggy<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/buggy.webp" alt="Buggy" width="914" height="734" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="buggy">
+          <summary>Buggy<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/buggy.webp" alt="Buggy" width="914" height="734" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="camper">
+          <summary>Camper<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/camper.webp" alt="Camper" width="835" height="476" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="camper">
+          <summary>Camper<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/camper.webp" alt="Camper" width="835" height="476" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="chevrolet samaro">
+          <summary>Chevrolet Samaro<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/chevrolet-samaro.webp" alt="Chevrolet Samaro" width="784" height="540" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="chevrolet samaro">
+          <summary>Chevrolet Samaro<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/chevrolet-samaro.webp" alt="Chevrolet Samaro" width="784" height="540" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="citroen 2cv">
+          <summary>Citroen 2CV<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/citroen-2cv.webp" alt="Citroen 2CV" width="960" height="629" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="citroen 2cv">
+          <summary>Citroen 2CV<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/citroen-2cv.webp" alt="Citroen 2CV" width="960" height="629" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="conqueror">
+          <summary>Conqueror<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/conqueror.webp" alt="Conqueror" width="960" height="673" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="conqueror">
+          <summary>Conqueror<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/conqueror.webp" alt="Conqueror" width="960" height="673" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="cougar">
+          <summary>Cougar<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/cougar.webp" alt="Cougar" width="788" height="627" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="cougar">
+          <summary>Cougar<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/cougar.webp" alt="Cougar" width="788" height="627" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="dozorb">
+          <summary>DozorB<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/dozorb.webp" alt="DozorB" width="960" height="738" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="dozorb">
+          <summary>DozorB<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/dozorb.webp" alt="DozorB" width="960" height="738" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="eger">
+          <summary>Eger<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/eger.webp" alt="Eger" width="960" height="662" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="eger">
+          <summary>Eger<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/eger.webp" alt="Eger" width="960" height="662" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="fenek">
+          <summary>Fenek<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/fenek.webp" alt="Fenek" width="955" height="733" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="fenek">
+          <summary>Fenek<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/fenek.webp" alt="Fenek" width="955" height="733" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="ford f100">
+          <summary>Ford F100<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/ford-f100.webp" alt="Ford F100" width="960" height="592" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="ford f100">
+          <summary>Ford F100<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/ford-f100.webp" alt="Ford F100" width="960" height="592" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="g65">
+          <summary>G65<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/g65.webp" alt="G65" width="960" height="635" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="g65">
+          <summary>G65<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/g65.webp" alt="G65" width="960" height="635" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="gaz66">
+          <summary>GAZ66<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/gaz66.webp" alt="GAZ66" width="918" height="714" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="gaz66">
+          <summary>GAZ66<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/gaz66.webp" alt="GAZ66" width="918" height="714" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="gaz66bort">
+          <summary>GAZ66bort<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/gaz66bort.webp" alt="GAZ66bort" width="960" height="679" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="gaz66bort">
+          <summary>GAZ66bort<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/gaz66bort.webp" alt="GAZ66bort" width="960" height="679" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="gaz71">
+          <summary>GAZ71<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/gaz71.webp" alt="GAZ71" width="960" height="620" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="gaz71">
+          <summary>GAZ71<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/gaz71.webp" alt="GAZ71" width="960" height="620" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="gaz 69">
+          <summary>GAZ 69<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/gaz-69.webp" alt="GAZ 69" width="835" height="587" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="gaz 69">
+          <summary>GAZ 69<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/gaz-69.webp" alt="GAZ 69" width="835" height="587" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="gaztigr">
+          <summary>GazTigr<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/gaztigr.webp" alt="GazTigr" width="900" height="620" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="gaztigr">
+          <summary>GazTigr<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/gaztigr.webp" alt="GazTigr" width="900" height="620" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="gelenvagen">
+          <summary>Gelenvagen<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/gelenvagen.webp" alt="Gelenvagen" width="939" height="699" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="gelenvagen">
+          <summary>Gelenvagen<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/gelenvagen.webp" alt="Gelenvagen" width="939" height="699" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="hammer h1">
+          <summary>Hammer H1<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/hammer-h1.webp" alt="Hammer H1" width="824" height="699" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="hammer h1">
+          <summary>Hammer H1<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/hammer-h1.webp" alt="Hammer H1" width="824" height="699" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="hemtt">
+          <summary>Hemtt<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/hemtt.webp" alt="Hemtt" width="960" height="587" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="hemtt">
+          <summary>Hemtt<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/hemtt.webp" alt="Hemtt" width="960" height="587" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="interceptor">
+          <summary>Interceptor<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/interceptor.webp" alt="Interceptor" width="847" height="601" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="interceptor">
+          <summary>Interceptor<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/interceptor.webp" alt="Interceptor" width="847" height="601" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="jeep wrangler">
+          <summary>Jeep Wrangler<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/jeep-wrangler.webp" alt="Jeep Wrangler" width="764" height="634" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="jeep wrangler">
+          <summary>Jeep Wrangler<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/jeep-wrangler.webp" alt="Jeep Wrangler" width="764" height="634" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="kamaz 4350 kung">
+          <summary>Kamaz 4350 Kung<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/kamaz-4350-kung.webp" alt="Kamaz 4350 Kung" width="860" height="633" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="kamaz 4350 kung">
+          <summary>Kamaz 4350 Kung<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/kamaz-4350-kung.webp" alt="Kamaz 4350 Kung" width="860" height="633" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="kamaz 4350">
+          <summary>Kamaz 4350<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/kamaz-4350.webp" alt="Kamaz 4350" width="953" height="640" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="kamaz 4350">
+          <summary>Kamaz 4350<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/kamaz-4350.webp" alt="Kamaz 4350" width="953" height="640" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="kamaz typhoon">
+          <summary>Kamaz Typhoon<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/kamaz-typhoon.webp" alt="Kamaz Typhoon" width="960" height="585" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="kamaz typhoon">
+          <summary>Kamaz Typhoon<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/kamaz-typhoon.webp" alt="Kamaz Typhoon" width="960" height="585" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="kart">
+          <summary>Kart<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/kart.webp" alt="Kart" width="911" height="552" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="kart">
+          <summary>Kart<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/kart.webp" alt="Kart" width="911" height="552" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="kraz 6322">
+          <summary>Kraz 6322<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/kraz-6322.webp" alt="Kraz 6322" width="937" height="680" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="kraz 6322">
+          <summary>Kraz 6322<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/kraz-6322.webp" alt="Kraz 6322" width="937" height="680" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="kraz fiona">
+          <summary>Kraz Fiona<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/kraz-fiona.webp" alt="Kraz Fiona" width="897" height="605" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="kraz fiona">
+          <summary>Kraz Fiona<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/kraz-fiona.webp" alt="Kraz Fiona" width="897" height="605" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="landcruiser">
+          <summary>LandCruiser<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/landcruiser.webp" alt="LandCruiser" width="759" height="575" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="landcruiser">
+          <summary>LandCruiser<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/landcruiser.webp" alt="LandCruiser" width="759" height="575" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="luaz">
+          <summary>Luaz<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/luaz.webp" alt="Luaz" width="840" height="640" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="luaz">
+          <summary>Luaz<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/luaz.webp" alt="Luaz" width="840" height="640" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="m35a2">
+          <summary>M35a2<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/m35a2.webp" alt="M35a2" width="889" height="667" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="m35a2">
+          <summary>M35a2<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/m35a2.webp" alt="M35a2" width="889" height="667" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="maz 509">
+          <summary>Maz 509<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/maz-509.webp" alt="Maz 509" width="955" height="609" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="maz 509">
+          <summary>Maz 509<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/maz-509.webp" alt="Maz 509" width="955" height="609" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="mbw 140">
+          <summary>MBw 140<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/mbw-140.webp" alt="MBw 140" width="903" height="674" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="mbw 140">
+          <summary>MBw 140<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/mbw-140.webp" alt="MBw 140" width="903" height="674" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="motorhome">
+          <summary>MotorHome<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/motorhome.webp" alt="MotorHome" width="960" height="610" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="motorhome">
+          <summary>MotorHome<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/motorhome.webp" alt="MotorHome" width="960" height="610" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="mustang">
+          <summary>Mustang<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/mustang.webp" alt="Mustang" width="885" height="568" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="mustang">
+          <summary>Mustang<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/mustang.webp" alt="Mustang" width="885" height="568" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="nissan warrior">
+          <summary>Nissan Warrior<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/nissan-warrior.webp" alt="Nissan Warrior" width="960" height="671" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="nissan warrior">
+          <summary>Nissan Warrior<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/nissan-warrior.webp" alt="Nissan Warrior" width="960" height="671" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="nivapickup">
+          <summary>NivaPickup<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/nivapickup.webp" alt="NivaPickup" width="700" height="526" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="nivapickup">
+          <summary>NivaPickup<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/nivapickup.webp" alt="NivaPickup" width="700" height="526" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="novator">
+          <summary>Novator<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/novator.webp" alt="Novator" width="960" height="625" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="novator">
+          <summary>Novator<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/novator.webp" alt="Novator" width="960" height="625" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="offroadrangerover">
+          <summary>OffroadRangeRover<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/offroadrangerover.webp" alt="OffroadRangeRover" width="929" height="641" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="offroadrangerover">
+          <summary>OffroadRangeRover<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/offroadrangerover.webp" alt="OffroadRangeRover" width="929" height="641" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="oshkosh">
+          <summary>Oshkosh<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/oshkosh.webp" alt="Oshkosh" width="831" height="675" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="oshkosh">
+          <summary>Oshkosh<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/oshkosh.webp" alt="Oshkosh" width="831" height="675" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="paz bandit">
+          <summary>Paz Bandit<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/paz-bandit.webp" alt="Paz Bandit" width="960" height="613" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="paz bandit">
+          <summary>Paz Bandit<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/paz-bandit.webp" alt="Paz Bandit" width="960" height="613" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="paz">
+          <summary>Paz<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/paz.webp" alt="Paz" width="829" height="553" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="paz">
+          <summary>Paz<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/paz.webp" alt="Paz" width="829" height="553" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="pontiac">
+          <summary>Pontiac<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/pontiac.webp" alt="Pontiac" width="960" height="618" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="pontiac">
+          <summary>Pontiac<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/pontiac.webp" alt="Pontiac" width="960" height="618" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="rag atv">
+          <summary>RaG ATV<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/rag-atv.webp" alt="RaG ATV" width="684" height="567" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="rag atv">
+          <summary>RaG ATV<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/rag-atv.webp" alt="RaG ATV" width="684" height="567" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="rag baja">
+          <summary>RaG Baja<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/rag-baja.webp" alt="RaG Baja" width="832" height="561" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="rag baja">
+          <summary>RaG Baja<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/rag-baja.webp" alt="RaG Baja" width="832" height="561" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="rag gaz 69">
+          <summary>RaG Gaz 69<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/rag-gaz-69.webp" alt="RaG Gaz 69" width="758" height="624" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="rag gaz 69">
+          <summary>RaG Gaz 69<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/rag-gaz-69.webp" alt="RaG Gaz 69" width="758" height="624" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="rag hummer armored">
+          <summary>RaG Hummer Armored<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/rag-hummer-armored.webp" alt="RaG Hummer Armored" width="960" height="676" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="rag hummer armored">
+          <summary>RaG Hummer Armored<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/rag-hummer-armored.webp" alt="RaG Hummer Armored" width="960" height="676" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="rag jeep willys">
+          <summary>RaG Jeep Willys<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/rag-jeep-willys.webp" alt="RaG Jeep Willys" width="903" height="723" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="rag jeep willys">
+          <summary>RaG Jeep Willys<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/rag-jeep-willys.webp" alt="RaG Jeep Willys" width="903" height="723" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="rag landrover 110">
+          <summary>RaG Landrover 110<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/rag-landrover-110.webp" alt="RaG Landrover 110" width="817" height="630" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="rag landrover 110">
+          <summary>RaG Landrover 110<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/rag-landrover-110.webp" alt="RaG Landrover 110" width="817" height="630" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="rag zil 130">
+          <summary>RaG Zil 130<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/rag-zil-130.webp" alt="RaG Zil 130" width="960" height="588" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="rag zil 130">
+          <summary>RaG Zil 130<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/rag-zil-130.webp" alt="RaG Zil 130" width="960" height="588" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="range rover">
+          <summary>Range Rover<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/range-rover.webp" alt="Range Rover" width="818" height="581" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="range rover">
+          <summary>Range Rover<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/range-rover.webp" alt="Range Rover" width="818" height="581" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="raptor">
+          <summary>Raptor<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/raptor.webp" alt="Raptor" width="933" height="666" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="raptor">
+          <summary>Raptor<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/raptor.webp" alt="Raptor" width="933" height="666" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="rover">
+          <summary>Rover<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/rover.webp" alt="Rover" width="787" height="591" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="rover">
+          <summary>Rover<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/rover.webp" alt="Rover" width="787" height="591" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="scout">
+          <summary>Scout<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/scout.webp" alt="Scout" width="709" height="552" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="scout">
+          <summary>Scout<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/scout.webp" alt="Scout" width="709" height="552" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="suv">
+          <summary>Suv<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/suv.webp" alt="Suv" width="929" height="669" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="suv">
+          <summary>Suv<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/suv.webp" alt="Suv" width="929" height="669" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="tlc 200">
+          <summary>Tlc 200<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/tlc-200.webp" alt="Tlc 200" width="840" height="634" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="tlc 200">
+          <summary>Tlc 200<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/tlc-200.webp" alt="Tlc 200" width="840" height="634" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="toyota hilux">
+          <summary>Toyota Hilux<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/toyota-hilux.webp" alt="Toyota Hilux" width="944" height="635" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="toyota hilux">
+          <summary>Toyota Hilux<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/toyota-hilux.webp" alt="Toyota Hilux" width="944" height="635" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="typhoon">
+          <summary>Typhoon<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/typhoon.webp" alt="Typhoon" width="960" height="668" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="typhoon">
+          <summary>Typhoon<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/typhoon.webp" alt="Typhoon" width="960" height="668" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="uaz 2315">
+          <summary>Uaz 2315<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/uaz-2315.webp" alt="Uaz 2315" width="862" height="558" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="uaz 2315">
+          <summary>Uaz 2315<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/uaz-2315.webp" alt="Uaz 2315" width="862" height="558" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="uaz 3909">
+          <summary>Uaz 3909<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/uaz-3909.webp" alt="Uaz 3909" width="752" height="612" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="uaz 3909">
+          <summary>Uaz 3909<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/uaz-3909.webp" alt="Uaz 3909" width="752" height="612" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="uaz 469 offroad">
+          <summary>Uaz 469 offroad<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/uaz-469-offroad.webp" alt="Uaz 469 offroad" width="834" height="678" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="uaz 469 offroad">
+          <summary>Uaz 469 offroad<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/uaz-469-offroad.webp" alt="Uaz 469 offroad" width="834" height="678" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="uaz 469">
+          <summary>Uaz 469<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/uaz-469.webp" alt="Uaz 469" width="699" height="588" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="uaz 469">
+          <summary>Uaz 469<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/uaz-469.webp" alt="Uaz 469" width="699" height="588" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="ural 4320 kung">
+          <summary>Ural 4320 Kung<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/ural-4320-kung.webp" alt="Ural 4320 Kung" width="887" height="739" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="ural 4320 kung">
+          <summary>Ural 4320 Kung<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/ural-4320-kung.webp" alt="Ural 4320 Kung" width="887" height="739" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="ural 4320">
+          <summary>Ural 4320<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/ural-4320.webp" alt="Ural 4320" width="960" height="630" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="ural 4320">
+          <summary>Ural 4320<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/ural-4320.webp" alt="Ural 4320" width="960" height="630" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="vaz 2108">
+          <summary>Vaz 2108<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/vaz-2108.webp" alt="Vaz 2108" width="886" height="574" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="vaz 2108">
+          <summary>Vaz 2108<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/vaz-2108.webp" alt="Vaz 2108" width="886" height="574" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="vaz 2109">
+          <summary>Vaz 2109<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/vaz-2109.webp" alt="Vaz 2109" width="861" height="611" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="vaz 2109">
+          <summary>Vaz 2109<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/vaz-2109.webp" alt="Vaz 2109" width="861" height="611" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="velociraptor6x6">
+          <summary>Velociraptor6x6<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/velociraptor6x6.webp" alt="Velociraptor6x6" width="960" height="587" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="velociraptor6x6">
+          <summary>Velociraptor6x6<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/velociraptor6x6.webp" alt="Velociraptor6x6" width="960" height="587" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="zil 130 kung">
+          <summary>Zil 130 kung<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/zil-130-kung.webp" alt="Zil 130 kung" width="861" height="661" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="zil 130 kung">
+          <summary>Zil 130 kung<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/zil-130-kung.webp" alt="Zil 130 kung" width="861" height="661" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="zil 130 refile">
+          <summary>Zil 130 Refile<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/zil-130-refile.webp" alt="Zil 130 Refile" width="919" height="658" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="zil 130 refile">
+          <summary>Zil 130 Refile<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/zil-130-refile.webp" alt="Zil 130 Refile" width="919" height="658" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="zil 130 repair">
+          <summary>Zil 130 Repair<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/zil-130-repair.webp" alt="Zil 130 Repair" width="960" height="641" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="zil 130 repair">
+          <summary>Zil 130 Repair<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/zil-130-repair.webp" alt="Zil 130 Repair" width="960" height="641" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="pl" data-name="zil 130">
+          <summary>Zil 130<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/zil-130.webp" alt="Zil 130" width="960" height="676" loading="lazy" decoding="async"></figure>
+            <p>Opis wkrótce.</p>
+          </div>
+        </details>
+
+        <details class="faq-item vehicle-item" data-lang="en" hidden data-name="zil 130">
+          <summary>Zil 130<span class="faq-icon"></span></summary>
+          <div class="faq-answer">
+            <figure class="vehicle-photo"><img src="assets/img/vehicles/zil-130.webp" alt="Zil 130" width="960" height="676" loading="lazy" decoding="async"></figure>
+            <p>Description coming soon.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">ROT<span>LAND</span></a>
+        <p data-lang="pl">Serwer DayZ PvP/PvE z demonami, mutantami, super pojazdami oraz autorskimi lokacjami.</p>
+        <p data-lang="en" hidden>A DayZ PvP/PvE server featuring demons, mutants, awesome vehicles and custom locations created by our team.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-lang="pl">NAWIGACJA</h4>
+        <h4 data-lang="en" hidden>NAVIGATION</h4>
+        <a href="index.html" data-lang="pl">Home</a>
+        <a href="index.html" data-lang="en" hidden>Home</a>
+        <a href="o-serwerze.html" data-lang="pl">O serwerze</a>
+        <a href="o-serwerze.html" data-lang="en" hidden>About</a>
+        <a href="jak-dolaczyc.html" data-lang="pl">Jak dołączyć</a>
+        <a href="jak-dolaczyc.html" data-lang="en" hidden>How to join</a>
+        <a href="regulamin.html" data-lang="pl">Regulamin</a>
+        <a href="regulamin.html" data-lang="en" hidden>Rules</a>
+        <a href="pojazdy.html" data-lang="pl">Pojazdy</a>
+        <a href="pojazdy.html" data-lang="en" hidden>Vehicles</a>
+        <a href="faq.html" data-lang="pl">FAQ</a>
+        <a href="faq.html" data-lang="en" hidden>FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-lang="pl">SPOŁECZNOŚĆ</h4>
+        <h4 data-lang="en" hidden>COMMUNITY</h4>
+        <a href="https://discord.gg/9V34hJrTmx" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a href="https://www.twitch.tv/liilgames" target="_blank" rel="noopener noreferrer">Twitch</a>
+        <a href="https://www.facebook.com/profile.php?id=61590449618435" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/liilgames/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.tiktok.com/@liilgames?lang=pl-PL" target="_blank" rel="noopener noreferrer">TikTok</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-lang="pl">SERWER</h4>
+        <h4 data-lang="en" hidden>SERVER</h4>
+        <p style="color:var(--bone-dim); font-family:var(--font-mono); font-size:13px;">136.243.60.212:2491</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-lang="pl">© 2026 Rotland. Wszelkie prawa zastrzeżone. Serwer nie jest powiązany z Bohemia Interactive.</span>
+      <span data-lang="en" hidden>© 2026 Rotland. All rights reserved. Not affiliated with Bohemia Interactive.</span>
+      <span class="credit-line">Illustration by @asiekdraws — in collaboration with @liilgames, @xdanql</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

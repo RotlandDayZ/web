@@ -156,11 +156,52 @@
     });
   }
 
+  /* ---------- Wyszukiwarka pojazdów ---------- */
+  function initVehicleSearch() {
+    var input = document.getElementById("vehicle-search");
+    var list = document.getElementById("vehicle-list");
+    if (!input || !list) return;
+    var count = document.getElementById("vehicle-count");
+    var empty = document.getElementById("vehicle-empty");
+    var total = parseInt(count.getAttribute("data-total"), 10) || 0;
+    var items = list.querySelectorAll(".vehicle-item");
+
+    function curLang() {
+      var l = "pl";
+      try { l = localStorage.getItem(LANG_KEY) === "en" ? "en" : "pl"; } catch (e) {}
+      return l;
+    }
+
+    function update() {
+      var lang = curLang();
+      var q = input.value.trim().toLowerCase();
+      var shown = 0;
+      items.forEach(function (el) {
+        var match = !q || el.getAttribute("data-name").indexOf(q) !== -1;
+        el.classList.toggle("is-filtered", !match);
+        if (match && el.getAttribute("data-lang") === lang) shown++;
+      });
+      input.placeholder = input.getAttribute("data-ph-" + lang);
+      count.textContent = lang === "en"
+        ? shown + " of " + total + " vehicles"
+        : shown + " z " + total + " pojazdów";
+      empty.hidden = shown !== 0;
+      empty.textContent = lang === "en" ? "No vehicle matches your search." : "Nie znaleziono pasującego pojazdu.";
+    }
+
+    input.addEventListener("input", update);
+    document.querySelectorAll("[data-set-lang]").forEach(function (btn) {
+      btn.addEventListener("click", update);
+    });
+    update();
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initLang();
     initNavToggle();
     initIpCopy();
     initSideNavScrollspy();
     initRulesDeepLinks();
+    initVehicleSearch();
   });
 })();

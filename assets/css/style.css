@@ -861,3 +861,29 @@ section { padding: 96px 0; }
   .footer-bottom { flex-direction: column; align-items: flex-start; }
   .page-hero { padding-top: 128px; }
 }
+
+/* ---------- Pojazdy ---------- */
+.vehicle-tools {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  max-width: 820px;
+  margin: 8px 0 16px;
+}
+.vehicle-search {
+  flex: 1 1 260px;
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+  color: var(--bone);
+  font-family: var(--font-body);
+  font-size: 15px;
+  padding: 12px 16px;
+  border-radius: 0;
+}
+.vehicle-search:focus-visible { outline: 2px solid var(--ember); outline-offset: 2px; border-color: var(--ember); }
+.vehicle-count { color: var(--fog); font-family: var(--font-mono); font-size: 13px; }
+.vehicle-empty { color: var(--fog); max-width: 820px; }
+.vehicle-item.is-filtered { display: none; }
+.vehicle-photo { margin: 0 0 14px; background: var(--void); border: 1px solid var(--line-strong); }
+.vehicle-photo img { display: block; width: 100%; height: auto; }
