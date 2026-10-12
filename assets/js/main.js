@@ -196,6 +196,19 @@
     update();
   }
 
+  /* ---------- Rozwijana mapa w regulaminie ---------- */
+  function initMapToggles() {
+    document.querySelectorAll(".map-toggle").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var fig = btn.closest("li").querySelector(".map-figure");
+        if (!fig) return;
+        var open = fig.hidden;
+        fig.hidden = !open;
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initLang();
     initNavToggle();
@@ -203,5 +216,6 @@
     initSideNavScrollspy();
     initRulesDeepLinks();
     initVehicleSearch();
+    initMapToggles();
   });
 })();

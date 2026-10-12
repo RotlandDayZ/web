@@ -900,3 +900,22 @@ section { padding: 96px 0; }
 }
 .faq-list > .faq-group:first-child,
 .faq-list > .faq-group[hidden] + .faq-group:nth-child(2) { margin-top: 0; padding-top: 0; border-top: 0; }
+
+/* ---------- Regulamin: rozwijana mapa ---------- */
+.map-toggle {
+  display: inline;
+  padding: 0;
+  background: none;
+  border: 0;
+  font: inherit;
+  color: var(--ember-bright);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.map-toggle:hover { color: var(--ember); }
+.map-toggle:focus-visible { outline: 2px solid var(--ember); outline-offset: 2px; }
+.map-figure { margin: 14px 0 6px; max-width: 640px; }
+.map-figure a { display: block; border: 1px solid var(--line-strong); background: var(--void); }
+.map-figure img { display: block; width: 100%; height: auto; }
+.map-figure figcaption { margin-top: 8px; font-size: 13px; color: var(--fog); }
