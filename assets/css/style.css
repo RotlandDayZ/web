@@ -919,3 +919,6 @@ section { padding: 96px 0; }
 .map-figure a { display: block; border: 1px solid var(--line-strong); background: var(--void); }
 .map-figure img { display: block; width: 100%; height: auto; }
 .map-figure figcaption { margin-top: 8px; font-size: 13px; color: var(--fog); }
+
+.page-hero .lede a { color: var(--ember-bright); text-decoration: underline; text-underline-offset: 3px; }
+.page-hero .lede a:hover { color: var(--ember); }
