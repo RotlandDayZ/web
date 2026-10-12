@@ -27,7 +27,7 @@ assets/img/          Grafiki (baner)
 Szukaj w plikach `.html`:
 
 - `https://discord.gg/TWOJ-LINK` — link do Discorda (kilka miejsc w każdym pliku).
-- `136.243.60.212:2491` — adres IP serwera (hero, stopka, strona "Jak dołączyć").
+- `51.195.74.63:2491` — adres IP serwera (hero, stopka, strona "Jak dołączyć").
 - Bloki oznaczone `DO UZUPEŁNIENIA` / `TO FILL IN` — lista modów, regulamin, opis lokacji, pakiety w sklepie.
 - `@asiekdraws`, `@liilgames`, `@xdanql` w stopce — podpisy autorów grafiki, zostaw lub zmień wedle uzgodnień.
 - W `shop.html` pakiety mają linki `href="#"` — podepnij realny system płatności (np. Tebex) i zaktualizuj ceny/zawartość.
